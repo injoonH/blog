@@ -1,0 +1,4 @@
+.page {
+    margin: 4rem auto 6rem;
+    max-width: clamp(360px, 80%, 600px);
+}

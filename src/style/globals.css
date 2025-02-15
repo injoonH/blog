@@ -1,0 +1,46 @@
+@import "post.css";
+
+:root {
+    --clr-background: #ffffff;
+    --clr-foreground: #4e5968;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --clr-background: #202027;
+        --clr-foreground: #c3c3c6;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-wrap: break-word;
+
+    background: var(--clr-background);
+
+    font-size: 1.7rem;
+    line-height: 2.55rem;
+    word-break: keep-all;
+    font-family: var(--font-pretendard);
+    color: var(--clr-foreground);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
+}
